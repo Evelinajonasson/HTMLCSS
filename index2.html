@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <meta name="description" content="Interest">
+  <title>Intresseanmälan</title>
+</head>
+<body>
+  <header>
+    <h1>Intresseanmälan</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Hem</a> |
+    <a href="index2.html">Intresseanmälan</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Intresseanmälan</h2>
+      <p>
+        Är du intresserad av att adoptera en hund eller katt? Vänligen kontakta oss i formuläret nedanför och berätta om dig själv och din boendesituation så försöker vi matcha dig med rätt husdjur.
+
+      En intresseanmälan gäller i 3 månader, därefter behöver du göra en ny vid fortsatt intresse.
+      </p>
+    </section>
+
+    <form action="index3.html" method="POST">
+      <fieldset>
+        <legend>Intresseformulär</legend>
+        <label>
+          Namn:
+          <input name="first-name" placeholder="Anders Andersson">
+        </label>
+
+        <label>
+        E-post:
+          <input type="email" id="email" placeholder="Anders.andersson@hotmail.com">
+        </label>
+
+        <label>
+          Telefonnummer:
+          <input type="tel" id="phone" name="phone" placeholder="+467xxxxxxxx" pattern="^(([+]46)|(0)|(00))(\d{7,9})$">
+        </label>
+
+        <label>Meddelande:</label>
+        <textarea
+          cols="40"
+          name="biography"
+          placeholder="Biografi"
+          rows="5">
+        </textarea>
+
+        <input type="submit" value="Skicka">
+        <input type="reset" value="Ångra">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <h3>Kontakt</h3>
+      <p class="footer"><strong>Tel:</strong> 070 8970 173</p>
+      <p class="footer"><strong>Mail:</strong> evelina.jonasson@iths.se</p>
+      <p class="footer"><strong>Adress:</strong> Eketrägatan 8E 41873 Göteborg</p>
+  </footer>
+</body>
+</html>

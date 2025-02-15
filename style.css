@@ -1,0 +1,98 @@
+body {
+  background-color: #689F72;
+}
+
+header {
+  background-color: #689F72;
+  color: #000000;
+  text-align: center;
+  padding: 30px;
+}
+
+aside {
+  background-color: #526E57;
+  color: #FFFFFF;
+  width: 40%;
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  background-color: #689F72;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #526E57;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+}
+
+main {
+  display: flex;
+  background-color: white;
+  padding: 15px;
+}
+
+a:link { /* Länkarna i nav-baren är vita */
+  color: white;
+}
+
+a:visited { /* Länkarna fortsätter vara vita efter att dom är besökta */
+  color: white;
+}
+
+a:hover { /* Länkarna ändrar färg när man för musen över */
+  color: gray;
+}
+
+h1, h2, h3 { /* Alla rubriker ska ha samma stilsättning */
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Interest { /* Innehållet efter man skickat en intresseanmälan */
+  font-style: italic;
+  text-align: center;
+}
+
+#Interest h2 { /* Rubriken h2 efter man skickat en intresseanmälan */
+  font-style: normal;
+}
+
+footer p { /* Alla p-element inom footer */
+  text-align: center;
+}
+
+ section, aside p { /* Alla p-element inom section och aside */
+  text-align: justify;
+  margin: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+section { /* Fördela utrymmet bra mellan sections på sidan "hem" */
+  width: 70%;
+}
+
+fieldset { /* För att hålla labels och knappar på rätt plats oavsett vw */
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 585px) { /* Breakpoints för telefoner och plattor */
+
+ main { /* För att få ner aside när skärmstorleken blir mindre */
+  display: flex;
+  flex-direction: column;
+ }
+
+ aside { /* För att aside inte ska bli för brett eller för smalt i mobil-version */
+  width: 80%;
+ }
+}
